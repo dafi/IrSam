@@ -22,5 +22,14 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.hdm2).setOnClickListener {
             helper.transmitIRCommand(SamsungTvIRCommand.TV_HDMI2)
         }
+
+        findViewById<Button>(R.id.pc1).setOnClickListener {
+            helper.transmitIRCommand(SamsungTvIRCommand.TV_PC1)
+        }
+
+        findViewById<Button>(R.id.pc2).setOnClickListener {
+            helper.transmitIRCommand(SamsungTvIRCommand.TV_PC2)
+        }
+
     }
 }

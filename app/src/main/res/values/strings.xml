@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IrSam</string>
+    <string name="pc2">PC2</string>
+    <string name="pc1">PC1</string>
+    <string name="hdmi1">HDMI1</string>
+    <string name="hdm2">HDM2</string>
 </resources>

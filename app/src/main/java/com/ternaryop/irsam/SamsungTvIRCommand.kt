@@ -21,19 +21,37 @@ class SamsungTvIRCommand private constructor(irData: String) : IRCommand(irData)
             "0000 006D 0000 0022 00AC 00AB 0015 0041 0015 0041 0015 0041 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0041 0015 0041 0015 0041 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0041 0015 0041 0015 0041 0015 0041 0015 0041 0015 0016 0015 0041 0015 0041 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0041 0015 0016 0015 0689"
 
 
-        val TV_POWER =
-            SamsungTvIRCommand(TV_POWER_HEX)
-        val TV_MUTE =
-            SamsungTvIRCommand(TV_MUTE_HEX)
-        val TV_VOLUME_DOWN =
-            SamsungTvIRCommand(TV_VOLUME_DOWN_HEX)
-        val TV_VOLUME_UP =
-            SamsungTvIRCommand(TV_VOLUME_UP_HEX)
-        val TV_SOURCE =
-            SamsungTvIRCommand(TV_SOURCE_HEX)
+        // /Volumes/Devel/stuff/examples/android/apk/samsung_remote/Universal Remote For Samsung_v1.3_apkpure.com.xapk.out/unknown/com.illusions.samsunguniversalremotecontrol/assets/databases/visio
+        private const val TV_HDMI1_HEX_DB =
+            "4524, 4472, 624, 1586, 624, 1612, 624, 1586, 624, 442, 650, 442, 624, 442, 624, 442, 624, 468, 624, 1586, 624, 1612, 624, 1586, 624, 468, 624, 442, 624, 442, 624, 468, 624, 442, 624, 1586, 624, 468, 624, 442, 624, 1612, 624, 442, 624, 1586, 650, 1586, 624, 1586, 650, 442, 624, 1586, 624, 1612, 624, 442, 624, 1612, 624, 442, 624, 442, 624, 468, 624, 48854"
+
+        private const val TV_HDMI2_HEX_DB =
+            "4498, 4472, 624, 1586, 624, 1612, 624, 1586, 624, 468, 624, 442, 624, 442, 624, 442, 624, 468, 624, 1586, 624, 1612, 624, 1586, 624, 468, 624, 442, 624, 442, 624, 468, 624, 442, 624, 442, 624, 1612, 624, 1586, 624, 1612, 624, 1586, 624, 1612, 624, 442, 624, 1612, 624, 1586, 624, 468, 624, 442, 624, 442, 624, 442, 650, 442, 624, 1586, 624, 468, 624, 48854"
+
+        private const val TV_PC1_HEX_DB =
+            "4524, 4472, 624, 1586, 624, 1612, 624, 1586, 624, 442, 650, 442, 624, 442, 624, 442, 624, 468, 624, 1586, 624, 1612, 624, 1586, 624, 468, 624, 442, 624, 442, 624, 468, 624, 442, 624, 1586, 624, 468, 624, 442, 624, 1612, 624, 442, 624, 1586, 624, 1612, 624, 442, 624, 468, 624, 1586, 624, 1612, 624, 442, 624, 1586, 650, 442, 624, 442, 624, 1612, 624, 48854"
+
+        private const val TV_PC2_HEX_DB =
+            "4472, 4394, 572, 1638, 572, 1638, 572, 1638, 572, 520, 572, 520, 572, 520, 572, 520, 572, 520, 572, 1638, 572, 1638, 572, 1638, 572, 520, 572, 520, 572, 520, 572, 520, 572, 520, 572, 1638, 572, 520, 572, 520, 572, 1638, 572, 520, 572, 1638, 572, 1638, 572, 520, 572, 520, 572, 1638, 572, 1638, 572, 520, 572, 1638, 572, 520, 572, 520, 572, 1638, 572, 45890"
+
+//        val TV_POWER =
+//            SamsungTvIRCommand(TV_POWER_HEX)
+//        val TV_MUTE =
+//            SamsungTvIRCommand(TV_MUTE_HEX)
+//        val TV_VOLUME_DOWN =
+//            SamsungTvIRCommand(TV_VOLUME_DOWN_HEX)
+//        val TV_VOLUME_UP =
+//            SamsungTvIRCommand(TV_VOLUME_UP_HEX)
+//        val TV_SOURCE =
+//            SamsungTvIRCommand(TV_SOURCE_HEX)
         val TV_HDMI1 =
-            SamsungTvIRCommand(TV_HDMI1_HEX)
+            SamsungTvIRCommand(TV_HDMI1_HEX_DB)
+//            SamsungTvIRCommand(TV_HDMI1_HEX)
         val TV_HDMI2 =
-            SamsungTvIRCommand(TV_HDMI2_HEX)
+            SamsungTvIRCommand(TV_HDMI2_HEX_DB)
+        val TV_PC1 =
+            SamsungTvIRCommand(TV_PC1_HEX_DB)
+        val TV_PC2 =
+            SamsungTvIRCommand(TV_PC2_HEX_DB)
     }
 }
